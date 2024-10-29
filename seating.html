@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+
+<html>
+<head>
+<title>CINEMAINDO</title>
+ <link href="style.css" rel="stylesheet">
+</head>
+
+<body background="maxresdefault.jpg"> </body>
+
+<style>
+<body>
+
+<div class="container">
+  <div class="content">
+     <h1> CINEMAINDO </h1>
+     <hr />
+     
+     body{
+}
+.menu ul{
+	margin:0;
+	padding:0;
+	line-style-type:none;
+	line-height:25px; 
+}
+.menu li{
+	float: left;
+	margin-top: 25px;
+}
+.menu ul li a{
+	background: #553DF5;
+	text-decoration:none;
+	width:180px;
+	display: inline-block;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	font-family: sans-serif;
+	letter spacing:0.5px;
+	padding: 5px 20px;
+	boarder:1px solid #fff;
+	transition: 0.6s ease;
+	}
+	
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	</style>
+	
+
+	
+
+	
+</head>
+
+<table border="0"> 
+<body>
+<nav class="menu">
+	 <nav class="logo">
+	     <img src="../../Documents/WEB PROGRAMMING DESIGN/final project/CINEMAINDO.png"
+	
+	</nav> 
+	
+   
+	<ul>
+		     <th> <li><a href="home.html"> HOME</a></li> </th>
+		     <th> <li><a href="screentime18.html"> SCREEN TIME</a></li> </th>
+		     <th> <li><a href="seating.html">SEAT</a></li> </th>
+		     <th> <li><a href="#">MERCHANDISE</a></li> </th>
+		     <th> <li><a href="upcoming.movies.html">UPCOMING MOVIES</a></li> </th>
+	  </ul>
+      </nav></body>
+      </table>
+      
+      <br>
+      
+<body>
+
+
+
+
+<div id="body">
+                
+                <!--<section class="content-wrapper main-content clear-fix">-->
+                    
+
+<div class="seat-layout-container">
+    
+   
+    <div>
+        <!--movie image-->
+        <div class="row">
+            <div class="zone-img">
+                <div style="color:#ffffff">BOOK A TICKET</div>
+            </div>
+        </div>
+        <!--footer menu of movie detail-->
+        <div class="fot-menu-box" style="margin-top:10px;">
+            <div class="fot-menu">
+                <!--movie detail-->
+                <div class="fot-div">
+                    <div class="fot-mov fot-wd1">MOVIE</div>
+                    <span>:</span>
+                    <div class="fot-tit fot-m-wd">Angel Has Fallen (ENGLISH) (18)</div>
+                </div>
+                <!--cinema detail-->
+                <div class="fot-div1">
+                    <div class="fot-mov fot-wd2">CINEMA</div>
+                    <span>:</span>
+                    <div class="fot-tit fot-c-wd">MMC MAHKOTA PARADE</div>
+                </div>
+                <!--date-->
+                <div class="fot-div2">
+                    <div class="fot-mov fot-wd1">SHOW DATE TIME</div>
+                    <span>:</span>
+                    <div class="fot-tit" style="border-right:0px;" id="show_time_div">01-09-2019 12:00 PM</div>
+
+                </div>
+            </div>
+        </div>
+        <!--menu content -->
+        <div class="menu-box">
+            <div class="menu-box-div">
+                <div class="booked-cls"><a>BOOKED</a></div>
+
+                <div class="avail-cls"><a>AVAILABLE</a></div>
+
+                <div class="select-cls"><a>SELECTED</a></div>
+
+                <div class="couple-cls"><a><span><img src="/webimg/graphics_web/couples.png"></span> COUPLE</a></div>
+
+                <div class="vip-cls"><a><span><img src="/webimg/graphics_web/vip icon.png"></span>VIP</a></div>
+            </div>
+            
+        </div>
+
+        <div>
+            
+            <div style="margin-top:5px;padding:5px;display:none;color:#036a96;" id="count_down_div">
+                <div>Please complete booking within</div>
+                <div id="count_down" style="color:#333;background:transparent;border:transparent;width:175px;"></div>
+            </div>
+        </div>
+        <!--/.movie image-->
+        <!--screen container-->
+        <div class="screen-container" style="width:100%!important">
+            <!--screen header-->
+            <div class="seat-head-box">
+                <div class="seat-head">
+                    <label class="head-color">BOOK YOUR SEATS</label>
+                    <label class="head-color1">TICKETS SELECTED : &nbsp;</label>
+                    <label class="head-color1" id="ticket_cnt">0</label><label class="head-color1" id="ticket_cntx">/</label>
+                    <label class="head-color1" id="ticket_tot">6</label><label class="head-color1" id="ticket_cnt">&nbsp;</label>
+                    <label class="head-color1" id="ticket_sel"> </label>
+                </div>
+            </div>
+            <!--speaker box areengement-->
+            <!--<div class="speaker-box">
+            </div>-->
+
+            <!--seat layout box-->
+            <div class="seat-layout-box" id="seat-layout-box" style="overflow: scroll; margin: 0px auto; width: 100%;">
+                <div id="seat_layout" style="width: 376px;">
+                            <ul class="seatarrangement">
+                                        <li><div>&nbsp;</div></li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214188, 'A8', this,0,'','',' ')" id="16214188">
+                                                    <div id="SeatNo">A8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214189, 'A7', this,0,'','',' ')" id="16214189">
+                                                    <div id="SeatNo">A7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214190, 'A6', this,0,'','',' ')" id="16214190">
+                                                    <div id="SeatNo">A6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214191, 'A5', this,0,'','',' ')" id="16214191">
+                                                    <div id="SeatNo">A5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214192, 'A4', this,0,'','',' ')" id="16214192">
+                                                    <div id="SeatNo">A4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214193, 'A3', this,0,'','',' ')" id="16214193">
+                                                    <div id="SeatNo">A3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214194, 'A2', this,0,'','',' ')" id="16214194">
+                                                    <div id="SeatNo">A2</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214195, 'A1', this,0,'','',' ')" id="16214195">
+                                                    <div id="SeatNo">A1</div>
+                                                </div>
+                                        </li>
+                            </ul>
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214196, 'B9', this,0,'','',' ')" id="16214196">
+                                                    <div id="SeatNo">B9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214197, 'B8', this,0,'','',' ')" id="16214197">
+                                                    <div id="SeatNo">B8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214198, 'B7', this,0,'','',' ')" id="16214198">
+                                                    <div id="SeatNo">B7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214199, 'B6', this,0,'','',' ')" id="16214199">
+                                                    <div id="SeatNo">B6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214200, 'B5', this,0,'','',' ')" id="16214200">
+                                                    <div id="SeatNo">B5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214201, 'B4', this,0,'','',' ')" id="16214201">
+                                                    <div id="SeatNo">B4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214202, 'B3', this,0,'','',' ')" id="16214202">
+                                                    <div id="SeatNo">B3</div>
+                                                </div>
+                                        </li>
+                                        <li><div>&nbsp;</div></li>
+                                        <li><div>&nbsp;</div></li>
+                            </ul>
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214203, 'C9', this,0,'','',' ')" id="16214203">
+                                                    <div id="SeatNo">C9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214204, 'C8', this,0,'','',' ')" id="16214204">
+                                                    <div id="SeatNo">C8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214205, 'C7', this,0,'','',' ')" id="16214205">
+                                                    <div id="SeatNo">C7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214206, 'C6', this,0,'','',' ')" id="16214206">
+                                                    <div id="SeatNo">C6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214207, 'C5', this,0,'','',' ')" id="16214207">
+                                                    <div id="SeatNo">C5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214208, 'C4', this,0,'','',' ')" id="16214208">
+                                                    <div id="SeatNo">C4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214209, 'C3', this,0,'','',' ')" id="16214209">
+                                                    <div id="SeatNo">C3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214210, 'C2', this,0,'','',' ')" id="16214210">
+                                                    <div id="SeatNo">C2</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214211, 'C1', this,0,'','',' ')" id="16214211">
+                                                    <div id="SeatNo">C1</div>
+                                                </div>
+                                        </li>
+                            </ul>
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214212, 'D9', this,0,'','',' ')" id="16214212">
+                                                    <div id="SeatNo">D9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214213, 'D8', this,0,'','',' ')" id="16214213">
+                                                    <div id="SeatNo">D8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214214, 'D7', this,0,'','',' ')" id="16214214">
+                                                    <div id="SeatNo">D7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214215, 'D6', this,0,'','',' ')" id="16214215">
+                                                    <div id="SeatNo">D6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214216, 'D5', this,0,'','',' ')" id="16214216">
+                                                    <div id="SeatNo">D5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214217, 'D4', this,0,'','',' ')" id="16214217">
+                                                    <div id="SeatNo">D4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214218, 'D3', this,0,'','',' ')" id="16214218">
+                                                    <div id="SeatNo">D3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214219, 'D2', this,0,'','',' ')" id="16214219">
+                                                    <div id="SeatNo">D2</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214220, 'D1', this,0,'','',' ')" id="16214220">
+                                                    <div id="SeatNo">D1</div>
+                                                </div>
+                                        </li>
+                            </ul>
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214221, 'E9', this,0,'','',' ')" id="16214221">
+                                                    <div id="SeatNo">E9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214222, 'E8', this,0,'','',' ')" id="16214222">
+                                                    <div id="SeatNo">E8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214223, 'E7', this,0,'','',' ')" id="16214223">
+                                                    <div id="SeatNo">E7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                         <div class="seat seat_free" onclick="toggleSeat(16214224, 'E6', this,0,'','',' ')" id="16214224">
+                                                    <div id="SeatNo">E6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214225, 'E5', this,0,'','',' ')" id="16214225">
+                                                    <div id="SeatNo">E5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214226, 'E4', this,0,'','',' ')" id="16214226">
+                                                    <div id="SeatNo">E4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214227, 'E3', this,0,'','',' ')" id="16214227">
+                                                    <div id="SeatNo">E3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214228, 'E2', this,0,'','',' ')" id="16214228">
+                                                    <div id="SeatNo">E2</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214229, 'E1', this,0,'','',' ')" id="16214229">
+                                                    <div id="SeatNo">E1</div>
+                                                </div>
+                                        </li>
+                            </ul>
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214230, 'F9', this,0,'','',' ')" id="16214230">
+                                                    <div id="SeatNo">F9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214231, 'F8', this,0,'','',' ')" id="16214231">
+                                                    <div id="SeatNo">F8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214232, 'F7', this,0,'','',' ')" id="16214232">
+                                                    <div id="SeatNo">F7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214233, 'F6', this,0,'','',' ')" id="16214233">
+                                                    <div id="SeatNo">F6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214234, 'F5', this,0,'','',' ')" id="16214234">
+                                                    <div id="SeatNo">F5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214235, 'F4', this,0,'','',' ')" id="16214235">
+                                                    <div id="SeatNo">F4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214236, 'F3', this,0,'','',' ')" id="16214236">
+                                                    <div id="SeatNo">F3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214237, 'F2', this,0,'','',' ')" id="16214237">
+                                                    <div id="SeatNo">F2</div>
+                                                </div>
+                                        </li>
+                                        <li><div>&nbsp;</div></li>
+                            </ul>
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214238, 'G9', this,0,'','',' ')" id="16214238">
+                                                    <div id="SeatNo">G9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214239, 'G8', this,0,'','',' ')" id="16214239">
+                                                    <div id="SeatNo">G8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214240, 'G7', this,0,'','',' ')" id="16214240">
+                                                    <div id="SeatNo">G7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214241, 'G6', this,0,'','',' ')" id="16214241">
+                                                    <div id="SeatNo">G6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214242, 'G5', this,0,'','',' ')" id="16214242">
+                                                    <div id="SeatNo">G5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214243, 'G4', this,0,'','',' ')" id="16214243">
+                                                    <div id="SeatNo">G4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214244, 'G3', this,0,'','',' ')" id="16214244">
+                                                    <div id="SeatNo">G3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214245, 'G2', this,0,'','',' ')" id="16214245">
+                                                    <div id="SeatNo">G2</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214246, 'G1', this,0,'','',' ')" id="16214246">
+                                                    <div id="SeatNo">G1</div>
+                                                </div>
+                                        </li>
+                            </ul>
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214247, 'H9', this,0,'','',' ')" id="16214247">
+                                                    <div id="SeatNo">H9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214248, 'H8', this,0,'','',' ')" id="16214248">
+                                                    <div id="SeatNo">H8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214249, 'H7', this,0,'','',' ')" id="16214249">
+                                                    <div id="SeatNo">H7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214250, 'H6', this,0,'','',' ')" id="16214250">
+                                                    <div id="SeatNo">H6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214251, 'H5', this,0,'','',' ')" id="16214251">
+                                                    <div id="SeatNo">H5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214252, 'H4', this,0,'','',' ')" id="16214252">
+                                                    <div id="SeatNo">H4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214253, 'H3', this,0,'','',' ')" id="16214253">
+                                                    <div id="SeatNo">H3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214254, 'H2', this,0,'','',' ')" id="16214254">
+                                                    <div id="SeatNo">H2</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214255, 'H1', this,0,'','',' ')" id="16214255">
+                                                    <div id="SeatNo">H1</div>
+                                                </div>
+                                        </li>
+                            </ul>
+
+                            <ul class="seatarrangement">
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214256, 'J9', this,0,'','',' ')" id="16214256">
+                                                    <div id="SeatNo">J9</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214257, 'J8', this,0,'','',' ')" id="16214257">
+                                                    <div id="SeatNo">J8</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214258, 'J7', this,0,'','',' ')" id="16214258">
+                                                    <div id="SeatNo">J7</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214259, 'J6', this,0,'','',' ')" id="16214259">
+                                                    <div id="SeatNo">J6</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214260, 'J5', this,0,'','',' ')" id="16214260">
+                                                    <div id="SeatNo">J5</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214261, 'J4', this,0,'','',' ')" id="16214261">
+                                                    <div id="SeatNo">J4</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214262, 'J3', this,0,'','',' ')" id="16214262">
+                                                    <div id="SeatNo">J3</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214263, 'J2', this,0,'','',' ')" id="16214263">
+                                                    <div id="SeatNo">J2</div>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <div class="seat seat_free" onclick="toggleSeat(16214264, 'J1', this,0,'','',' ')" id="16214264">
+                                                    <div id="SeatNo">J1</div>
+                                                </div>
+                                        </li>
+                            </ul>
+                    
+            
+                </div>
+            </div>    
+            <!--speaker box areengement-->
+            <!--<div class="speaker-box">
+            </div>-->
+            <!--screen image-->
+            <div class="screen">
+                <img class="line-img" src="/webimg/graphics_web/line.png">
+                <img class="screen-img" src="/webimg/graphics_web/screen.png">
+            </div>
+          
+           
+        </div>
+        <!--/.screen container-->
+
+        <!--continue button-->
+        
+            <div>
+                <button id="continue_summary" class="btn pan" style="background-color:#036a96;color:#fff;float:right">CONTINUE</button>
+            </div>
+        
+    </div>
+    <script>
+
+        $(document).ready(function () {
+           
+          
+            $('#seat_layout').css({ 'width': $('.seatarrangement').width() + 70 + 'px' });
+           
+            if($(window).width() <1000) {
+                //$('#seat-layout-box').perfectScrollbar();
+                $('#seat-layout-box').css({ 'overflow': 'scroll','margin':'0 auto','width':'100%' });
+            }
+
+            $( window ).resize(function() {
+                $('#seat_layout').css({ 'width': $('.seatarrangement').width() + 70 + 'px' });
+           
+                if($(window).width() <1000) {                    
+                    $('#seat-layout-box').css({ 'overflow': 'scroll','margin':'0 auto','width':'100%' });
+                }
+            });
+            $('#dlg-tt').dialog({ autoOpen: false });
+        });
+        var seat_arr=[];
+        var seat_names=[];
+        var sel_seat_Id=[];
+        var toggleSeat = function(seatId, seatNo, seat,pairseatid,pariseatno,isvip,pairseat_no){
+
+            var seatStatus = "0";
+            var seatType="";
+            if($(seat).attr("class").indexOf("seat_free") >=0) {
+                seatType = "normal";
+            } else if($(seat).attr("class").indexOf("seat_selected") >=0) {
+                seatStatus = "3";
+                seatType = "normal";
+            }
+
+            if($(seat).attr("class").indexOf("seat_couple") >=0) {
+                seatType = "couple";
+            } else if($(seat).attr("class").indexOf("seat_vip") >=0) {
+                seatType = "vip";
+            }
+
+            var selected = parseInt($('#ticket_cnt').html());
+
+            if(seatStatus == "0") {
+                if(seatType == "normal") {
+                    //Show dialog
+                    $("input:radio").removeAttr("checked");
+
+                    if(selected + 1 > '6') {
+                        bootbox.alert('You have already selected maximum allowed seats. Please deselect a seat to allow this selection.');
+                        return;
+                    }
+
+                    $('#dlg-tt').dialog({
+                        autoOpen: true,
+                        width: 300,
+                        height: 230,
+                        closeOnEscape: true,
+                        draggable: true,
+                        title: "Choose Ticket Type - Seat " + seatNo ,
+                        buttons: {
+                            'Ok': function () {
+                                var reqUpdateShowSub = {};
+                                var ticketType = $("input[name=ticketType]:checked").val();
+
+                                if(ticketType == null) {
+                                    bootbox.alert("Please choose a Ticket Type");
+                                    return;
+                                }
+                                reqUpdateShowSub.Id = seatId;
+                                reqUpdateShowSub.TicketType = ticketType;
+
+                                seat_arr.push(reqUpdateShowSub);
+                                seat_names.push(seatNo);
+                                sel_seat_Id.push(seatId);
+
+                                $(seat).removeClass().addClass("seat seat_selected");
+                                selected +=1;
+                                $('#ticket_cnt').html(selected);
+                                if(seat_names !=null){
+                                    $('#ticket_sel').html("[" + seat_names + "]");
+                                } else {
+                                    $('#ticket_sel').html("");
+                                }
+
+                                if(selected == 1 || selected == 2) {
+                                    var expr_in = 12 * 60;
+                                    $('#count_down').countdown({until: + expr_in, format:'MS',onExpiry:reset_selections});
+                                    $('#count_down_div').show();
+                                }
+                                $('#dlg-tt').dialog('close');
+                            },
+                            'Cancel': function () {
+                                $('#dlg-tt').dialog('close');
+                            }
+
+                        }
+                    });
+                } else if(seatType == "couple" || seatType == "vip") {
+
+
+                    if(seatType == "couple"){
+                        if(selected + 2 > '6') {
+                            bootbox.alert('You have already selected maximum allowed seats. Please deselect a seat to allow this selection.');
+                            return;
+                        }
+                    }
+                    if(seatType == "vip"){
+                        if(selected + 1 > '6') {
+                            bootbox.alert('You have already selected maximum allowed seats. Please deselect a seat to allow this selection.');
+                            return;
+                        }
+                    }
+                    var reqUpdateShowSub = {};
+                    var ticketType = 20;
+
+                    reqUpdateShowSub.Id = seatId;
+                    reqUpdateShowSub.TicketType = ticketType;
+                    reqUpdateShowSub.SeatCoupleStatus=1;
+
+                    seat_names.push(seatNo);
+                    sel_seat_Id.push(seatId);
+
+                    $(seat).removeClass().addClass("seat seat_selected");
+                    if(pairseatid > 0) {
+                        $('#' + pairseatid).removeClass().addClass("seat seat_selected");
+                        seat_names.push(pariseatno);
+                        reqUpdateShowSub.PairSeatId=pairseatid;
+                        sel_seat_Id.push(pairseatid);
+                    }
+                    seatType == "couple" ? selected +=2 : selected +=1;
+                    $('#ticket_cnt').html(selected);
+                    if(seat_names !=null){
+                        $('#ticket_sel').html("[" + seat_names + "]");
+                    } else {
+                        $('#ticket_sel').html("");
+                    }
+
+                    if(selected == 1 || selected == 2) {
+                        var expr_in = 12 * 60;
+                        $('#count_down').countdown({until: + expr_in, format:'MS',onExpiry:reset_selections});
+                        $('#count_down_div').show();
+                    }
+
+                    seat_arr.push(reqUpdateShowSub);
+
+                    $('#dlg-tt').dialog('close');
+                }
+
+            } else if (seatStatus == "3") {
+
+                for (var i = 0; i < seat_arr.length; i++){
+                    if (seat_arr[i].Id === seatId) {
+                        seat_arr.splice(i, 1);
+                    }
+                }
+
+                var index = seat_names.indexOf(seatNo);
+                if (index > -1) {
+                    seat_names.splice(index, 1);
+
+                    if(pairseatid != ""){
+                        var index = seat_names.indexOf(pairseat_no);
+                        if(index > -1){
+                            seat_names.splice(index, 1);
+                        }
+                    }
+                }
+
+                var index1 = sel_seat_Id.indexOf(seatId);
+                if (index1 > -1) {
+
+                    sel_seat_Id.splice(index1, 1);
+
+                    if(pairseatid != ""){
+                        var index2 = sel_seat_Id.indexOf(pairseatid);
+                        if(index2 > -1){
+                            sel_seat_Id.splice(index, 1);
+                        }
+                    }
+                }
+
+                $(seat).removeClass().addClass("seat seat_free");
+                if(isvip!=""){
+                    $(seat).removeClass().addClass("seat seat_vip");
+                }
+                if(pairseatid > 0) {
+                    $(seat).removeClass().addClass("seat seat_couple");
+                    $('#' + pairseatid).removeClass().addClass("seat seat_couple");
+                    if(selected - 2 < 0) {
+                        selected = 0;
+                    } else {
+                        selected -=2;
+                    }
+                } else {
+                    if(selected - 1 < 0) {
+                        selected = 0;
+                    } else {
+                        selected -=1;
+                    }
+                }
+
+                $('#ticket_cnt').html(selected);
+                if(seat_names != null){
+                    $('#ticket_sel').html("[" + seat_names + "]");
+                } else {
+                    $('#ticket_sel').html("");
+                }
+
+                if(selected == 0){
+                    $('#count_down').countdown("destroy");
+                    $('#count_down_div').hide();
+                }
+            }
+        }
+
+        var reset_selections = function(){
+            bootbox.alert("The maximum allowed time has expired. Your selections will be reset now.", function(){
+                window.location.href = "/Home/Index";
+            });
+
+        }
+
+        $("#continue_summary").on("click",function(){
+
+            if(parseInt($('#ticket_cnt').html()) > 0)
+            {
+                showPreloader();
+                var qr_code="";
+                var _postData={"CinemaId":5007,"MovieId":2278,"ShowId":82731};
+                   $.ajax({
+                        type: "POST",
+                        url: '/SeatLayout/CheckIsShowAvail',
+                        cache: false,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        data: JSON.stringify(_postData),
+                        success: function (msg) {
+                            if(msg.result==true)
+                            {
+                                var _postData={"CinemaId":5007,"ShowId":82731,"SeatId":sel_seat_Id.toString()};
+                                $.ajax({
+                                    type: "POST",
+                                    url: '/SeatLayout/CheckIsSeatAvail',
+                                    cache: false,
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    data: JSON.stringify(_postData),
+                                    success: function (msg) {
+                                        var cnt=0;
+                                        if(msg.result==0)
+                                        {
+                                            $.ajax({
+                                                type: "POST",
+                                                url: '/SeatLayout/PaymentUpdate',
+                                                cache: false,
+                                                contentType: "application/json; charset=utf-8",
+                                                dataType: "json",
+                                                data:JSON.stringify({"cinemaId":'5007',"movieId":'2278',"ShowId":'82731',"ShowTime":'12:00 PM',"MovieType":'2D',"Showdate":'01-09-2019'}),
+                                                success: function (msg) {
+                                                    qr_code=msg.RefNo;
+
+                                                    for(i=0;i<seat_arr.length;i++)
+                                                    {
+                                                        seat_arr[i].CinemaId = 5007;
+                                                        seat_arr[i].QRCode = msg.RefNo;
+                                                        seat_arr[i].ShowId = '82731';
+                                                        seat_arr[i].RowNo=i;
+                                                        seat_arr[i].OnlineCharge=1;
+
+                                                        var _postData = { reqUpdateShowSub: seat_arr[i]};
+
+                                                        $.ajax({
+                                                            type: "POST",
+                                                            url: '/SeatLayout/UpdateShowSub',
+                                                            cache: false,
+                                                            contentType: "application/json; charset=utf-8",
+                                                            dataType: "json",
+                                                            data: JSON.stringify(_postData),
+                                                            success: function (msg) {
+
+                                                                if(msg.response.indexOf("Please") >=0)
+                                                                {
+
+                                                                    bootbox.alert(msg.response,function(){  location.reload()});
+                                                                }
+                                                                else
+                                                                {
+                                                                    cnt+=1;
+                                                                    if(cnt==seat_arr.length)
+                                                                    {
+                                                                        window.location.href = "/Summary/Index/" + qr_code + "/?c=" + 'Yom3sbyv0oM=' + "&m=" + '4arjNRf1ZGU=' + "&s=" + 'JKzpOvC17uA=';
+                                                                    }
+
+                                                                }
+                                                            },
+                                                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                                                bootbox.alert("Something went wrong. Please try later.");
+                                                                //alert("Failure: " + XMLHttpRequest + textStatus + errorThrown);
+                                                            },
+                                                            beforeSend: function () {
+                                                                showPreloader();
+                                                            },
+                                                            complete: function () {
+
+                                                                //hidePreloader();
+                                                            }
+                                                        });
+                                                    }
+
+                                                },
+                                                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                                    bootbox.alert("Something went wrong. Please try later.");
+                                                    //alert("Failure1: " + XMLHttpRequest + textStatus + errorThrown);
+                                                },
+                                                beforeSend: function () {
+                                                    showPreloader();
+                                                },
+                                                complete: function () {
+                                                   // hidePreloader();
+                                                }
+
+
+                                            });
+
+                                        }
+                                        else
+                                        {
+                                            bootbox.alert("Some or all of the selected seats are not available. Please choose some other seats.", function(){  location.reload();});
+                                        }
+
+                                    },
+                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        bootbox.alert("Something went wrong. Please try later.");
+                                        //alert("Failure: " + XMLHttpRequest + textStatus + errorThrown);
+                                    },
+                                    beforeSend: function () {
+                                        showPreloader();
+                                    },
+                                    complete: function () {
+                                       // hidePreloader();
+                                    }
+                                });
+                            }
+                            else
+                            {
+                                bootbox.alert("Something went wrong. Please try later.");
+
+                            }
+
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            bootbox.alert("Something went wrong. Please try later.");
+                            //alert("Failure: " + XMLHttpRequest + textStatus + errorThrown);
+                        },
+                        beforeSend: function () {
+                            showPreloader();
+                        },
+                        complete: function () {
+                            //hidePreloader();
+                        }
+                    });
+            }
+            else
+            {
+                bootbox.alert("Please choose seats of your choice.");
+            }
+        });
+
+    </script>
+</div>
+<input id="refresh" value="no" style="display:none">
+    <script>
+        //Reload on page back
+        onload = function () {            
+            var e = document.getElementById("refresh");                      
+            if (e.value == "no") 
+            {                
+                    e.value = "yes";                    
+            }
+            else { e.value = "no"; location.reload(); }
+        }      
+
+    </script>
+<style>
+    .ps-container > .ps-scrollbar-x-rail,
+    .ps-container > .ps-scrollbar-y-rail {
+        opacity: 0.6;
+    }
+</style>
+                <!--</section>-->
+            </div>
+
+
+
+<footer>
+                <div>
+                    <img class="horiz-img" src="/webimg/graphics_web/horizontal line.png">
+                </div>
+                <!--/..horizontal line-->
+                <!--Menu Container-->
+                
+                <!--/..Menu Container-->
+                <!--No of visitors-->
+                <div class="visitors" style="background-color:#036a96;color:#fff">
+                    
+                    <script src=""></script>
+                </div>
+                <!-- Footer -->
+                <div class="panel panel-default margin-top-bot">
+                    <div class="panel-body paneltop-3" style="background-color:#fff">
+                        <div class="col-lg-12">
+                            <p class="foot-size" style="color:#333">
+                                ©&nbsp;2019,&nbsp;All Rights Reserved,&nbsp;
+                                MM2 Star Screen Sdn. Bhd. (1214343-K) &nbsp; (1214343-K),&nbsp; Malaysia <br>
+                                Powered By <a href="http://www.asdratech.com" target="_blank">AsdRA Technologies</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Consulted By Nucifera Software Solutions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.Footer -->
+                <!-- /.container -->
+                <div id="preloader_fade"></div>
+                <div id="preloader_modal">
+                    <img id="loader" src="/webimg/graphics_web/loading.gif">
+                </div>
+            </footer>

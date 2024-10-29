@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container-fluid navigation-background">
+
+	<div class="container">
+    
+    	<div class="row quickbuy">
+        
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+            
+            	<!--CINEMA!-->
+                
+                <select name="cinema" id="cinema" onchange="getMovie(this);" class="form-control dropdown">
+                <option value="">Select Cinema</option>
+                <option value="mmC+1+Plaza">mmC 1 Plaza</option><option value="mmC+Bahau">mmC Bahau</option><option value="mmC+Bukit+Jambul">mmC Bukit Jambul</option><option value="mmC+IOI+Kulai">mmC IOI Kulai</option><option value="mmC+Kampar">mmC Kampar</option><option value="mmC+Kerian+Sentral">mmC Kerian Sentral</option><option value="mmC+Mahkota+Parade">mmC Mahkota Parade</option><option value="mmC+Prangin+Mall">mmC Prangin Mall</option><option value="mmC+Riverside+Kuching">mmC Riverside Kuching</option><option value="mmC+Segamat+Central">mmC Segamat Central</option><option value="mmC+Seri+Iskandar">mmC Seri Iskandar</option><option value="mmC+Shaw+Centre+Point">mmC Shaw Centre Point</option><option value="mmC+Summer+Mall">mmC Summer Mall</option><option value="mmCineplexes+City+Square%2C+JB">mmCineplexes City Square, JB</option><option value="mmCineplexes+Damansara%2C+KL">mmCineplexes Damansara, KL</option><option value="mmCineplexes+River+Front%2C+SP">mmCineplexes River Front, SP</option><option value="Platinum+Movie+Suites+-+Damansara%2C+KL">Platinum Movie Suites - Damansara, KL</option>                </select>
+                <!--CINEMA!-->
+                
+                <div class="visible-xs visible-sm">
+                	<br>
+                </div>
+            
+            </div>
+            
+            <div class="col-lg-3  col-md-3 col-sm-6">
+            
+            	<!--Movie!-->
+                
+                <select name="movie" id="movie" onchange="getMovie(this);" class="form-control dropdown">
+                <option value="">Select Movie</option>
+                <option value="%28Premier%29+Angel+Has+Fallen">(Premier) Angel Has Fallen (18)</option><option value="%28Premier%29+Fast+%26+Furious+Presents%3A+Hobbs+%26+Shaw">(Premier) Fast &amp; Furious Presents: Hobbs &amp; Shaw (P13)</option><option value="47+Meters+Down%3A+Uncaged">47 Meters Down: Uncaged (P13)</option><option value="Abigail">Abigail (P13)</option><option value="Angel+Has+Fallen">Angel Has Fallen (18)</option><option value="BoBoiBoy+Movie+2">BoBoiBoy Movie 2 (U)</option><option value="BoBoiBoy+Movie+2%2A">BoBoiBoy Movie 2* (U)</option><option value="Bodies+at+Rest">Bodies at Rest (18)</option><option value="Bodies+at+Rest%2A">Bodies at Rest* (18)</option><option value="Comali">Comali (P13)</option><option value="Death+Whisper">Death Whisper (P13)</option><option value="Dora+and+the+Lost+City+of+Gold%2A">Dora and the Lost City of Gold* (P13)</option><option value="Fast+%26+Furious+Presents%3A+Hobbs+%26+Shaw%2A">Fast &amp; Furious Presents: Hobbs &amp; Shaw* (P13)</option><option value="Hello%2C+Love%2C+Goodbye">Hello, Love, Goodbye (P13)</option><option value="Kennedy+Club">Kennedy Club (P13)</option><option value="Kron">Kron (P13)</option><option value="Line+Walker+2%3A+Invisible+Spy%2A">Line Walker 2: Invisible Spy* (P13)</option><option value="Makmum">Makmum (18)</option><option value="Makmum%2A">Makmum* (18)</option><option value="Mission+Mangal">Mission Mangal (P13)</option><option value="Nerkonda+Paarvai">Nerkonda Paarvai (18)</option><option value="Once+Upon+a+Time+...+in+Hollywood">Once Upon a Time ... in Hollywood (18)</option><option value="Once+Upon+a+Time+...+in+Hollywood%2A">Once Upon a Time ... in Hollywood* (18)</option><option value="Parasite">Parasite (18)</option><option value="Parasite%2A">Parasite* (18)</option><option value="Ready+or+Not">Ready or Not (18)</option><option value="Siccin+6">Siccin 6 (18)</option><option value="Stuber">Stuber (18)</option><option value="Stuber%2A">Stuber* (18)</option><option value="The+Divine+Fury">The Divine Fury (18)</option><option value="The+Divine+Fury%2A">The Divine Fury* (18)</option><option value="The+Lion+King%2A">The Lion King* (U)</option><option value="Warkah%2A">Warkah* (U)</option>                </select>
+                <!--Movie!-->
+                
+                 <div class="visible-xs visible-sm">
+                	<br>
+                </div>
+            
+            </div>
+
+
+<div class="row quickbuy">
+        
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+            
+            	<!--CINEMA DROPDOWN!-->
+                                <select name="cinema" id="cinema" onchange="getMovie(this);" class="form-control dropdown">
+                <option value="">Select Cinema</option>
+                <option value="mmC+1+Plaza">mmC 1 Plaza</option><option value="mmC+Bahau" selected="">mmC Bahau</option><option value="mmC+Bukit+Jambul">mmC Bukit Jambul</option><option value="mmC+IOI+Kulai">mmC IOI Kulai</option><option value="mmC+Kampar">mmC Kampar</option><option value="mmC+Kerian+Sentral">mmC Kerian Sentral</option><option value="mmC+Mahkota+Parade">mmC Mahkota Parade</option><option value="mmC+Prangin+Mall">mmC Prangin Mall</option><option value="mmC+Riverside+Kuching">mmC Riverside Kuching</option><option value="mmC+Segamat+Central">mmC Segamat Central</option><option value="mmC+Seri+Iskandar">mmC Seri Iskandar</option><option value="mmC+Shaw+Centre+Point">mmC Shaw Centre Point</option><option value="mmC+Summer+Mall">mmC Summer Mall</option><option value="mmCineplexes+City+Square%2C+JB">mmCineplexes City Square, JB</option><option value="mmCineplexes+Damansara%2C+KL">mmCineplexes Damansara, KL</option><option value="mmCineplexes+River+Front%2C+SP">mmCineplexes River Front, SP</option><option value="Platinum+Movie+Suites+-+Damansara%2C+KL">Platinum Movie Suites - Damansara, KL</option>                </select>
+                <!--CINEMA DROPDOWN!-->
+                
+                <div class="visible-xs visible-sm">
+                	<br>
+                </div>
+            
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-6">
+            
+            	<!--MOVIE DROPDOWN!-->
+                <select name="movie" id="movie" onchange="getMovie(this);" class="form-control dropdown">
+                <option value="">Select Movie</option>
+                <option id="18" value="Angel+Has+Fallen" selected="">Angel Has Fallen (18)</option><option id="U" value="BoBoiBoy+Movie+2%2A">BoBoiBoy Movie 2* (U)</option><option id="P13" value="Comali">Comali (P13)</option><option id="P13" value="Fast+%26+Furious+Presents%3A+Hobbs+%26+Shaw%2A">Fast &amp; Furious Presents: Hobbs &amp; Shaw* (P13)</option><option id="P13" value="Kennedy+Club">Kennedy Club (P13)</option><option id="P13" value="Kron">Kron (P13)</option><option id="P13" value="Line+Walker+2%3A+Invisible+Spy%2A">Line Walker 2: Invisible Spy* (P13)</option><option id="18" value="Makmum%2A">Makmum* (18)</option>                </select>
+                <!--MOVIE DROPDOWN!-->
+                
+                <div class="visible-xs visible-sm">
+                	<br>
+                </div>
+            
+            </div>
+            
+            <div class="col-lg-2  col-md-2 col-sm-6">
+            
+            	<!--SHOWING DATE-->
+                <select name="showing_date" id="showing_date" onchange="getMovie(this);" class="form-control dropdown">
+                <option value="">Select Date</option>
+                <option value="23.08.2019" selected="">23.08.2019</option><option value="24.08.2019">24.08.2019</option><option value="25.08.2019">25.08.2019</option>                </select>
+                <!--SHOWING DATE-->
+                
+                <div class="visible-xs visible-sm">
+                	<br>
+                </div>
+            
+            </div>
+            
+             <div class="col-lg-2  col-md-2 col-sm-6">
+            
+            	<!--SHOWING TIME-->
+                <select name="showing_time" id="showing_time" onchange="getMovie(this);" class="form-control dropdown">
+                <option value="">Select Time</option>
+                <option value="12:00" selected="">12:00</option><option value="14:25">14:25</option><option value="16:50">16:50</option><option value="19:10">19:10</option><option value="21:30">21:30</option><option value="23:50">23:50</option>                </select>
+                <!--SHOWING TIME-->
+                
+                <div class="visible-xs visible-sm">
+                	<br>
+                </div>
+            
+            </div>
+            
+            <div class="col-lg-2  col-md-2 visible-lg visible-md">
+            
+            	
+                <!--<button style="width:49%;" class="btn btn-primary" id="buyticket" >SUBMIT</button>!-->
+                <button style="width:49%;" class="btn btn-primary" type="button" id="buyticket" name="buyticket">SUBMIT</button>
+                <button style="width:49%;" class="btn btn-default" type="button" onclick="resetAll()">RESET</button>
+            
+            </div>
+           <br><br>
+
+<a href="HO00005536.jpg"><img src="HO00005536.jpg"width="750"  class="img-responsive"></a>
+
+<a href="mission-mangal-10-08-2019-03-27-09-809.jpg"><img src="mission-mangal-10-08-2019-03-27-09-809.jpg"width="750" height="270"  class="img-responsive"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+        
+                
+           
+            
+                
+
+			        
+        
+    
+        
+        
+    
+
+</body>
+</html>
